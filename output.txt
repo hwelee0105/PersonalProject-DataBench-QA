@@ -1,0 +1,22 @@
+Generated Prompt:
+ 
+# TODO: complete the following function in one line. It should give the answer to: How many rows are there in this dataframe? 
+def example(df: pd.DataFrame) -> int:
+    df.columns=["A"]
+    return df.shape[0]
+
+# TODO: complete the following function in one line. It should give the answer to: Is the most favorited author mainly communicating in Spanish?
+def answer(df: pd.DataFrame) -> boolean:
+    df.columns = ['id', 'author_id', 'author_name', 'author_handler', 'author_avatar', 'lang', 'type', 'text', 'date', 'mention_ids', 'mention_names', 'retweets', 'favorites', 'links', 'links_first', 'image_links', 'image_links_first', 'rp_user_id', 'rp_user_name', 'location', 'tweet_link', 'search']
+    return
+prompt is.... 
+ 
+# TODO: complete the following function in one line. It should give the answer to: How many rows are there in this dataframe? 
+def example(df: pd.DataFrame) -> int:
+    df.columns=["A"]
+    return df.shape[0]
+
+# TODO: complete the following function in one line. It should give the answer to: Is the most favorited author mainly communicating in Spanish?
+def answer(df: pd.DataFrame) -> boolean:
+    df.columns = ['id', 'author_id', 'author_name', 'author_handler', 'author_avatar', 'lang', 'type', 'text', 'date', 'mention_ids', 'mention_names', 'retweets', 'favorites', 'links', 'links_first', 'image_links', 'image_links_first', 'rp_user_id', 'rp_user_name', 'location', 'tweet_link', 'search']
+    return

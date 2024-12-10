@@ -31,13 +31,13 @@ def main():
     result = process(prompt=prompt)
 
     # format results into a txt file with 1) question and 2) generated answer
-    
+
 
 
     # evaluate answers
 
 def process(prompt):
-    # load  tokenizer and model 
+    # load tokenizer and model 
     tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-13b")
     model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-13b", device_map="auto")
 
