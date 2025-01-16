@@ -33,14 +33,14 @@ def call_gguf_model(prompts):
     results = []
     i = 0
     for p in prompts:
-        print("prompt is.... \n", p)
+        # print("prompt is.... \n", p)
         # if i < 75:
         #     continue
         # i = i +1
         escaped = p.replace('"', '\\"') 
         # truncated_prompt = escaped[:350]
-        cmd = f'llama-cli --hf-repo "JOSHMT0744/TableLlama-Q4_K_M-GGUF" --hf-file tablellama-q4_k_m.gguf -p "{escaped}" -c 1024 -n 128'
-        # cmd = f'llama-cli --hf-repo "TheBloke/stable-code-3b-GGUF" --hf-file stable-code-3b.Q4_K_M.gguf -p "{escaped}" -c 1024 -n 128'
+        # cmd = f'llama-cli --hf-repo "JOSHMT0744/TableLlama-Q4_K_M-GGUF" --hf-file tablellama-q4_k_m.gguf -p "{escaped}" -c 1024 -n 128'
+        cmd = f'llama-cli --hf-repo "TheBloke/stable-code-3b-GGUF" --hf-file stable-code-3b.Q4_K_M.gguf -p "{escaped}" -c 1024 -n 128'
         # cmd = f'llama-cli -m ./models/stable-code-3b.Q4_K_M.gguf -p "{escaped}" -c 1024 -n 128'
         args = shlex.split(cmd)
         try:
@@ -65,6 +65,7 @@ def example_generator(row: dict) -> str:
     dataset = row["dataset"]
     question = row["question"]
     df = utils.load_table(dataset)
+    return f"""Answer the following question using the table provided. The question is: {question}. The table is: {df}"""
     return f"""
 # TODO: complete the following function in one line. It should give the answer to: How many rows are there in this dataframe? 
 def example(df: pd.DataFrame) -> int:
