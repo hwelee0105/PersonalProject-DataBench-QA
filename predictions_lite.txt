@@ -1,323 +1,323 @@
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: 'DataFrame' object has no attribute 'links_first'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'DataFrame' object has no attribute 'links_first'
+True
+True
+True
+True
+__CODE_ERROR__: 'DataFrame' object has no attribute 'author_id'
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+2
 20
-__CODE_ERROR__: invalid syntax (<string>, line 4)
+𝓦𝓲𝓷𝓼𝓽𝓸𝓷 𝓛𝓸𝓫𝓸
 __CODE_ERROR__: 'Series' object has no attribute 'split'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: 'DataFrame' object has no attribute 'links_first'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
+__CODE_ERROR__: 'DataFrame' object has no attribute 'author_id'
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+['Albert Navarro', 'Marita Calafell', 'Enrique Porras']
+['es']
+__CODE_ERROR__: single positional indexer is out-of-bounds
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+[2]
+__CODE_ERROR__: '(' was never closed (<string>, line 4)
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+True
+False
+False
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+618
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+84.2
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+Whismur
+Grass
+13
+['Mega Gallade', 'Metagross', 'Latias']
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+['Gigantamax Flapple', 'Zweilous']
+__CODE_ERROR__: closing parenthesis ')' does not match opening parenthesis '[' (<string>, line 4)
+__CODE_ERROR__: 'tuple' object has no attribute 'split'
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+[np.int64(110), np.int64(110)]
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: unmatched ']' (<string>, line 4)
 False
 __CODE_ERROR__: 'Series' object has no attribute 'split'
-__CODE_ERROR__: unterminated string literal (detected at line 4) (<string>, line 4)
 __CODE_ERROR__: 'Series' object has no attribute 'split'
-20
+0.6291001325102317
+18
 __CODE_ERROR__: 'Series' object has no attribute 'split'
+Emotional_Range
 __CODE_ERROR__: 'Series' object has no attribute 'split'
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
 __CODE_ERROR__: 'Series' object has no attribute 'split'
+Automation Engineer
 __CODE_ERROR__: 'Series' object has no attribute 'split'
-__CODE_ERROR__: 'Series' object has no attribute 'split'
-__CODE_ERROR__: 'Series' object has no attribute 'split'
-__CODE_ERROR__: 'tuple' object has no attribute 'split'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+['Stock Trader', 'Credit Manager', 'Chairperson', 'Data Analyst', 'Safety Instructor']
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+[np.float64(0.5907415983292473), np.float64(0.5853143224995465), np.float64(0.5741970926130652)]
+[0.4006511115612809, 0.5118683521090917, 0.6608432069327402, 0.6206018740612098]
 __CODE_ERROR__: '[' was never closed (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: '[' was never closed (<string>, line 4)
-[150, 140, 130, 120, 110, 100, 90, 80, 70, 60, 50, 40, 30, 20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-__CODE_ERROR__: '[' was never closed (<string>, line 4)
-[[70, 110, 'Gigantamax Flapple', 95, 'Grass', 80, 60, False, 485, 70, 'Dragon', 8], [72, 85, 'Zweilous', 65, 'Dark', 70, 70, False, 420, 58, 'Dragon', 5], [200, 100, 'Regidrago', 100, 'Dragon', 50, 50, True, 580, 80, None, 8], [75, 125, 'Armaldo', 70, 'Rock', 100, 80, False, 495, 45, 'Bug', 3], [79, 85, 'Bibarel', 55, 'Normal', 60, 60, False, 410, 71, 'Water', 4], [70, 65, 'Delcatty', 55, 'Normal', 65, 55, False, 380, 70, None, 3], [95, 75, 'Mega Slowbro', 130, 'Water', 180, 80, False, 590, 30, 'Psychic', 1], [68, 165, 'Mega Gallade', 65, 'Psychic', 95, 115, False, 618, 110, 'Fighting', 4], [65, 85, 'Eelektrik', 75, 'Electric', 70, 70, False, 405, 40, None, 5], [44, 38, 'Helioptile', 61, 'Electric', 33, 43, False, 289, 70, 'Normal', 6], [123, 100, 'Gogoat', 97, 'Grass', 62, 81, False, 531, 68, None, 6], [60, 45, 'Orbeetle', 80, 'Bug', 110, 120, False, 505, 90, 'Psychic', 8], [35, 100, 'Alolan Dugtrio', 50, 'Ground', 60, 70, False, 425, 110, 'Steel', 7], [80, 80, 'Latias', 110, 'Dragon', 90, 130, True, 600, 110, 'Psychic', 3], [95, 70, 'Clefable', 95, 'Fairy', 73, 90, False, 483, 60, None, 1], [52, 40, 'Steenee', 40, 'Grass', 48, 48, False, 290, 62, None, 7], [64, 51, 'Whismur', 51, 'Normal', 23, 23, False, 240, 28, None, 3], [80, 135, 'Metagross', 95, 'Steel', 130, 90, False, 600, 70, 'Psychic', 3], [68, 67, 'Corvisquire', 43, 'Flying', 55, 55, False, 365, 77, None, 8], [41, 63, 'Arrokuda', 40, 'Water', 40, 30, False, 280, 66, None, 8]]
+[]
+False
+__CODE_ERROR__: 'Series' object has no attribute 'split'
 True
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-['Emotional_Range', 'Conscientousness', 'Self-transcendence', 'Openness to Change', 'Self-enhancement', 'n', 'Hedonism', 'Profession', 'Agreeableness', 'Conversation', 'Extraversion', 'Openness']
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-Emotional_Range
-Emotional_Range
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-20
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
+True
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+__CODE_ERROR__: 'Column not found: x'
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+B2
+en
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
 __CODE_ERROR__: '[' was never closed (<string>, line 4)
+__CODE_ERROR__: "Columns not found: 'weight'"
+['B2', 'S1']
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+[np.float64(9245996.0), np.float64(9246982.0), np.float64(9320661.0), np.float64(9320696.0), np.float64(9321012.0), np.float64(9321369.0), np.float64(9321442.0), np.float64(9321667.0), np.float64(9321735.0), np.float64(9321803.0), np.float64(9322324.0), np.float64(9323057.0), np.float64(9323422.0), np.float64(9323438.0), np.float64(9323447.0), np.float64(9324689.0), np.float64(9479911.0), np.float64(9480043.0), np.float64(9480049.0), np.float64(932136912.0)]
+20
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: unmatched ']' (<string>, line 4)
+__CODE_ERROR__: name 'expected_columns_list' is not defined
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+['id<gx:category>', 'author_id<gx:category>', 'author_name<gx:category>', 'author_handler<gx:category>', 'author_avatar<gx:url>', 'user_created_at<gx:date>', 'user_description<gx:text>', 'user_favourites_count<gx:number>', 'user_followers_count<gx:number>', 'user_following_count<gx:number>', 'user_listed_count<gx:number>', 'user_tweets_count<gx:number>', 'user_verified<gx:boolean>', 'user_location<gx:text>', 'lang<gx:category>', 'type<gx:category>', 'text<gx:text>', 'date<gx:date>', 'mention_ids<gx:list[category]>', 'mention_names<gx:list[category]>', 'retweets<gx:number>', 'favorites<gx:number>', 'replies<gx:number>', 'quotes<gx:number>', 'links<gx:list[url]>', 'links_first<gx:url>', 'image_links<gx:list[url]>', 'image_links_first<gx:url>', 'rp_user_id<gx:category>', 'rp_user_name<gx:category>', 'location<gx:text>', 'tweet_link<gx:url>', 'source<gx:text>', 'search<gx:category>']
+__CODE_ERROR__: name 'data' is not defined
+__CODE_ERROR__: name 'df_final' is not defined
+__CODE_ERROR__: unmatched ']' (<string>, line 4)
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+__CODE_ERROR__: 'Index' object has no attribute 'split'
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+__CODE_ERROR__: 'Index' object has no attribute 'split'
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+['id<gx:category>', 'author_id<gx:category>', 'author_name<gx:category>', 'author_handler<gx:category>', 'author_avatar<gx:url>', 'user_created_at<gx:date>', 'user_description<gx:text>', 'user_favourites_count<gx:number>', 'user_followers_count<gx:number>', 'user_following_count<gx:number>', 'user_listed_count<gx:number>', 'user_tweets_count<gx:number>', 'user_verified<gx:boolean>', 'user_location<gx:text>', 'lang<gx:category>', 'type<gx:category>', 'text<gx:text>', 'date<gx:date>', 'mention_ids<gx:list[category]>', 'mention_names<gx:list[category]>', 'retweets<gx:number>', 'favorites<gx:number>', 'replies<gx:number>', 'quotes<gx:number>', 'links<gx:list[url]>', 'links_first<gx:url>', 'image_links<gx:list[url]>', 'image_links_first<gx:url>', 'rp_user_id<gx:category>', 'rp_user_name<gx:category>', 'location<gx:text>', 'tweet_link<gx:url>', 'source<gx:text>', 'search<gx:category>']
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+__CODE_ERROR__: name 'df_clean' is not defined
+__CODE_ERROR__: 'Sex'
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+27
+__CODE_ERROR__: invalid syntax. Perhaps you forgot a comma? (<string>, line 4)
+20
+20
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+Skilled
+Existing Credits Paid Back Duly Till Now
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+['Skilled', 'Unskilled - Resident', 'Highly Skilled']
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: 'DataFrame' object has no attribute 'Purpose_of_Loan'
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: 'Loan Duration \xa0- \xa0Months'
+[13, 6, 1]
+['Loan Amount', 'Credit History', 'Loan Duration - Months', 'Age', 'Savings Account', 'Job', 'Number of Existing Loans', 'Purpose of Loan']
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+20
+20
+20
+__CODE_ERROR__: 'DataFrame' object has no attribute 'Calories_kcal'
+__CODE_ERROR__: 'Column not found: Total Fat \xa0(g)'
+20
+__CODE_ERROR__: unmatched ']' (<string>, line 4)
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+20
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+tangerine
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+__CODE_ERROR__: 'Index' object has no attribute 'split'
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+['grapes', 'banana', 'french fries', 'kiwifruit', 'ice cream', 'milk', 'taco', 'bread', 'cookie', 'strawberry', 'chocolate bar', 'tangerine', 'hotdog', 'chicken', 'green apple', 'potato', 'pineapple', 'lemon', 'rice', 'corn']
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+<pandas.core.groupby.generic.DataFrameGroupBy object at 0x112503ce0>
+__CODE_ERROR__: 'DataFrame' object has no attribute 'total_fat'
+__CODE_ERROR__: 'tuple' object has no attribute 'split'
+__CODE_ERROR__: 'Index' object has no attribute 'split'
+20
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: name 'columns' is not defined
+20
+20
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+__CODE_ERROR__: name 'columns' is not defined
+20
+__CODE_ERROR__: unmatched ']' (<string>, line 4)
+__CODE_ERROR__: unterminated string literal (detected at line 4) (<string>, line 4)
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+__CODE_ERROR__: 'Index' object has no attribute 'split'
+__CODE_ERROR__: 'Index' object has no attribute 'split'
+__CODE_ERROR__: 'Index' object has no attribute 'split'
+__CODE_ERROR__: 'Index' object has no attribute 'split'
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+__CODE_ERROR__: name 'cols' is not defined
+__CODE_ERROR__: 'Index' object has no attribute 'split'
+__CODE_ERROR__: name 'column_names' is not defined
+20
+20
+20
+20
+20
+20
+20
+__CODE_ERROR__: 0
+__CODE_ERROR__: unmatched ']' (<string>, line 4)
+__CODE_ERROR__: 'Index' object has no attribute 'split'
+__CODE_ERROR__: 'Index' object has no attribute 'split'
+20
+20
+__CODE_ERROR__: 'Index' object has no attribute 'split'
+Are you registered to vote?
+__CODE_ERROR__: 'Index' object has no attribute 'split'
+__CODE_ERROR__: 'Index' object has no attribute 'split'
+20
+['Are you registered to vote?', 'Which of the following best describes your ethnic heritage?', 'Who are you most likely to vote for on election day?', 'Division', 'Did you vote in the 2016 Presidential election? (Four years ago)', 'Weight', 'How likely are you to vote in the forthcoming US Presidential election? Early Voting Open', 'State', 'County FIPS', 'Who did you vote for in the 2016 Presidential election? (Four years ago)', 'What is the highest degree or level of school you have *completed* ?', 'NCHS Urban/rural', 'likelihood', 'Which of these best describes the kind of work you do?', 'How old are you?']
+__CODE_ERROR__: 'list' object has no attribute 'shape'
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+False
+Index([], dtype='object')
+False
+19
+19.1
+61990
+__CODE_ERROR__: 'tuple' object has no attribute 'split'
+automotorDURSAN.com A
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+Madrid
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+['Gris / Plata', 'Negro', 'Azul']
+__CODE_ERROR__: 'MultiIndex' object has no attribute 'split'
+['Diésel', 'Gasolina']
+__CODE_ERROR__: 'Column not found: url'
+__CODE_ERROR__: 'tuple' object has no attribute 'split'
 __CODE_ERROR__: '[' was never closed (<string>, line 4)
-__CODE_ERROR__: '[' was never closed (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-['kind', 'num_claims', 'title', 'date', 'lang', 'id', 'abstract', 'type', 'target', 'graphext_cluster', 'organization']
-['kind', 'num_claims', 'title', 'date', 'lang', 'id', 'abstract', 'type', 'target', 'graphext_cluster', 'organization']
-__CODE_ERROR__: 'Index' object has no attribute 'get_object'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-20
-('kind', 'num_claims', 'title', 'date', 'lang', 'id')
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: '[' was never closed (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: 'list' object has no attribute 'split'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-20
-20
-20
-20
-20
-34
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-20
-20
-20
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+True
+False
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+False
 20
 20
 __CODE_ERROR__: unmatched ']' (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
+20
+weekday
+__CODE_ERROR__: 'DataFrame' object has no attribute 'item'
+Coke
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+['Coffee', 'Bread', 'Farm House', 'Hearty & Seasonal']
 __CODE_ERROR__: unmatched ']' (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-['author_avatar<gx:url>', 'user_favourites_count<gx:number>', 'favorites<gx:number>']
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-[10000, 20000]
-['Loan Amount', 'Credit History', 'Loan Duration - Months', 'Age', 'Savings Account', 'Job', 'Number of Existing Loans', 'Purpose of Loan']
-['Loan Amount', 'Credit History', 'Loan Duration - Months', 'Age', 'Savings Account', 'Job', 'Number of Existing Loans', 'Purpose of Loan']
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-['Loan Amount', 'Credit History', 'Loan Duration - Months', 'Age', 'Savings Account', 'Job', 'Number of Existing Loans', 'Purpose of Loan']
-__CODE_ERROR__: 'Series' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'count'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax. Perhaps you forgot a comma? (<string>, line 4)
-__CODE_ERROR__: invalid syntax. Perhaps you forgot a comma? (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax. Perhaps you forgot a comma? (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax. Perhaps you forgot a comma? (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-20
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-['Calories (kcal)', 'Total Fat (g)', 'name', 'Sodium (g)', 'Protein (g)', 'Total Sugar (g)']
-__CODE_ERROR__: unterminated string literal (detected at line 4) (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: 'str' object has no attribute 'ascending'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: '[' was never closed (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-20
-20
-20
-20
-20
-20
-20
-20
-20
-20
-20
-20
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-20
-__CODE_ERROR__: unterminated string literal (detected at line 4) (<string>, line 4)
-__CODE_ERROR__: unterminated string literal (detected at line 4) (<string>, line 4)
-__CODE_ERROR__: invalid syntax. Perhaps you forgot a comma? (<string>, line 4)
-20
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-20
-20
-20
-20
-20
-20
-20
-20
-20
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax. Perhaps you forgot a comma? (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-[1, 3, 10]
-__CODE_ERROR__: '[' was never closed (<string>, line 4)
-__CODE_ERROR__: invalid syntax. Perhaps you forgot a comma? (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: 'Index' object has no attribute 'contains'
-__CODE_ERROR__: 'DataFrame' object has no attribute 'is_professional'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: 'Index' object has no attribute 'contains'
-20
-__CODE_ERROR__: 'DataFrame' object has no attribute 'is_professional'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: 'DataFrame' object has no attribute 'is_professional'
-__CODE_ERROR__: 'DataFrame' object has no attribute 'is_professional'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'DataFrame' object has no attribute 'is_professional'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-[False False False False False]
-__CODE_ERROR__: 'Series' object has no attribute 'weekday_weekend'
-__CODE_ERROR__: 'Series' object has no attribute 'split'
-__CODE_ERROR__: 'Series' object has no attribute 'weekday_weekend'
-20
-5
-__CODE_ERROR__: 'Series' object has no attribute 'weekday_weekend'
-20
-__CODE_ERROR__: 'Series' object has no attribute 'split'
-Index(['date_time', 'Item', 'period_day', 'Transaction', 'weekday_weekend'], dtype='object')
-__CODE_ERROR__: 'Series' object has no attribute 'split'
-__CODE_ERROR__: 'Series' object has no attribute 'split'
-Index(['date_time', 'Item', 'period_day', 'Transaction', 'weekday_weekend'], dtype='object')
-Index(['date_time', 'Item', 'period_day', 'Transaction', 'weekday_weekend'], dtype='object')
-__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
-__CODE_ERROR__: name 'period_day' is not defined
-[1, 2, 3, 4]
-__CODE_ERROR__: 'DataFrame' object has no attribute 'tolist'
-__CODE_ERROR__: 'Series' object has no attribute 'weekday_weekend'
-__CODE_ERROR__: 'list' object has no attribute 'split'
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
 __CODE_ERROR__: 'Series' object has no attribute 'split'
 __CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+True
+True
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+True
+9
+__CODE_ERROR__: unmatched ']' (<string>, line 4)
+644423763
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+United States
+['United States', 'Australia', 'Malta']
+[np.float64(4.666666666666667), np.float64(4.25)]
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: "['Review_Text'] not in index"
+[119781124]
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
 __CODE_ERROR__: 'DataFrame' object has no attribute 'Review_Text'
-__CODE_ERROR__: 'str' object has no attribute 'Review_Text'
+True
+False
+True
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+__CODE_ERROR__: 'DataFrame' object has no attribute 'author_id'
+8111.15
+105448
 20
-__CODE_ERROR__: 'DataFrame' object has no attribute 'year_month'
-__CODE_ERROR__: No axis named Review_Text.split(, 1000) for object type DataFrame
+Donald J. Trump
+105448
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+en
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+[20]
+__CODE_ERROR__: 'tuple' object has no attribute 'split'
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: '(' was never closed (<string>, line 4)
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+False
+True
+__CODE_ERROR__: 'Series' object has no attribute 'split'
+True
 20
-__CODE_ERROR__: 'DataFrame' object has no attribute 'year_month'
+0.0923955552240227
+324.5
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
 __CODE_ERROR__: 'Series' object has no attribute 'split'
+204402
+324.5
+complexitat.cat
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+Index(['Christopher', 'Chris J. Headleand', 'Nieman Lab', 'Peter Skomoroch'], dtype='object', name='name')
+['Paul Klemm', 'Deok Gun Park', 'Data Science Fact']
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: unmatched ']' (<string>, line 4)
 __CODE_ERROR__: 'Series' object has no attribute 'split'
+gull
 __CODE_ERROR__: 'Series' object has no attribute 'split'
-['Rating', 'Reviewer_Location', 'Year_Month', 'Branch']
-__CODE_ERROR__: 'Index' object has no attribute 'pop'
-__CODE_ERROR__: 'DataFrame' object has no attribute 'year_month'
+True
+True
+20
+3.1
+6
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+1
+squirrel
+squirrel
+squirrel
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
+[1, 6, 2, 4]
 __CODE_ERROR__: '[' was never closed (<string>, line 4)
-[4.8, 4.5, 4.5, 4.5, 4.8]
-[234567.0, 123456.0, 123456.0, 123456.0]
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: (ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')), '(Request ID: 65d6f1ea-9d78-4bce-98d2-42e5c86b3749)')
-__CODE_ERROR__: list index out of range
-__CODE_ERROR__: list index out of range
-__CODE_ERROR__: list index out of range
-__CODE_ERROR__: list index out of range
-__CODE_ERROR__: 'DataFrame' object has no attribute 'location'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-20
-__CODE_ERROR__: 'Series' object has no attribute 'split'
-__CODE_ERROR__: 'DataFrame' object has no attribute 'locations'
-__CODE_ERROR__: 'DataFrame' object has no attribute 'links_first'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: 'Series' object has no attribute 'split'
-__CODE_ERROR__: 'Series' object has no attribute 'split'
+[nan, 1000.0, inf, nan, 0.0]
+__CODE_ERROR__: 'airborne'
+[9, 4, 4, 3]
+[0, 2, 0, 6, 0]
+True
+True
 __CODE_ERROR__: 'Series' object has no attribute 'split'
 __CODE_ERROR__: 'Series' object has no attribute 'split'
 20
+3.5410000000000004
+nan
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+United Kingdom
 __CODE_ERROR__: 'Series' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
+__CODE_ERROR__: iLocation based boolean indexing on an integer type is not available
+17315.0
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+__CODE_ERROR__: 'DataFrame' object has no attribute 'split'
+['United Kingdom', 'Australia']
+__CODE_ERROR__: unmatched ']' (<string>, line 4)
+__CODE_ERROR__: unmatched ')' (<string>, line 4)
 __CODE_ERROR__: 'Series' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-[Index([], dtype='object'), 'name']
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-[10, 20, 30, 40, 50]
-[Index([], dtype='object')]
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-['legs', 'domestic', 'breathes', 'class_type', 'venomous', 'feathers', 'animal_name']
-['legs', 'domestic', 'breathes', 'class_type', 'venomous', 'feathers', 'animal_name']
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: 'Index' object has no attribute 'to_dict'
-20
-__CODE_ERROR__: 'Series' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-20
-__CODE_ERROR__: 'DataFrame' object has no attribute 'toothed'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'DataFrame' object has no attribute 'toothed'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: invalid syntax. Perhaps you forgot a comma? (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-__CODE_ERROR__: 'DataFrame' object has no attribute 'description'
-__CODE_ERROR__: 'DataFrame' object has no attribute 'customerID'
-__CODE_ERROR__: 'DataFrame' object has no attribute 'invoiceNo'
-__CODE_ERROR__: 'DataFrame' object has no attribute 'country'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'DataFrame' object has no attribute 'unitPrice'
-20
-20
-__CODE_ERROR__: 'DataFrame' object has no attribute 'country'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'Index' object has no attribute 'split'
-__CODE_ERROR__: 'DataFrame' object has no attribute 'description'
-__CODE_ERROR__: invalid syntax (<string>, line 4)
-[('US', 'CA'), ('CustomerID', 'Quantity')]
-__CODE_ERROR__: invalid syntax (<string>, line 4)
+[25, 24, 18, 12]
 __CODE_ERROR__: '[' was never closed (<string>, line 4)
-[10243.0, 10243.0, 10243.0, 10243.0]
-__CODE_ERROR__: 'DataFrame' object has no attribute 'description'
-[2, 2]
 
 
-DataBench_lite accuracy is 0.009375
+DataBench_lite accuracy is 0.171875
