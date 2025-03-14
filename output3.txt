@@ -1,0 +1,2 @@
+DataBench_lite accuracy is 0.01875
+Created Archive.zip containing predictions.txt and predictions_lite.txt
