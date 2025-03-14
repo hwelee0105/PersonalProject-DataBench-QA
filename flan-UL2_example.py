@@ -1,7 +1,21 @@
-# pip install accelerate transformers
-from transformers import T5ForConditionalGeneration, AutoTokenizer
+
+from transformers import T5ForConditionalGeneration, AutoModelForSeq2SeqLM, AutoTokenizer, BitsAndBytesConfig
 import torch
-model = T5ForConditionalGeneration.from_pretrained("google/flan-ul2", torch_dtype=torch.bfloat16, device_map="auto")                                                                 
+import os
+
+# os.environ["HF_HOME"] = "D:\huggingface_cache"
+
+offload_folder = "offload"
+os.makedirs(offload_folder, exist_ok=True)
+
+
+bnb_config = BitsAndBytesConfig(load_in_8bit=True)
+model = T5ForConditionalGeneration.from_pretrained(
+    "google/flan-ul2", 
+    torch_dtype=torch.bfloat16,
+    device_map="auto",
+    offload_folder=offload_folder,
+    )                                                                 
 tokenizer = AutoTokenizer.from_pretrained("google/flan-ul2")
 
 input_string = "Answer the following question by reasoning step by step. The cafeteria had 23 apples. If they used 20 for lunch, and bought 6 more, how many apple do they have?"                                               
