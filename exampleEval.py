@@ -6,7 +6,8 @@ import argparse
 
 from databench_eval import Runner, Evaluator, utils
 
-from transformers import T5ForConditionalGeneration, AutoTokenizer, AutoModelForCausalLM
+from transformers import T5ForConditionalGeneration, AutoTokenizer, AutoModelForCausalLM, GenerationConfig
+import os
 import torch
 
 parser = argparse.ArgumentParser(description='Sampling for dataBenchQA')
@@ -18,6 +19,10 @@ args = parser.parse_args()
 # ===========================================================================================
 #                                    Utils functions 
 # ===========================================================================================
+
+
+model_name = 'deepseek-ai/deepseek-llm-7b-base'
+
 
 # from llama_cpp import Llama
 
@@ -31,37 +36,90 @@ args = parser.parse_args()
 # and https://github.com/ggerganov/llama.cpp
 
 # Uses Flan-UL2
-# model = T5ForConditionalGeneration.from_pretrained("google/flan-ul2", torch_dtype=torch.bfloat16, device_map="auto")                                                                 
-# tokenizer = AutoTokenizer.from_pretrained("google/flan-ul2")
+offload_folder = "offload"
+if not os.path.exists(offload_folder):
+    os.makedirs(offload_folder)
+# os.makedirs(offload_folder, exist_ok=True)
+
+model = T5ForConditionalGeneration.from_pretrained(
+    "google/flan-ul2", 
+    torch_dtype=torch.bfloat16,
+    device_map="auto",
+    offload_folder=offload_folder,
+    )                                                                 
+tokenizer = AutoTokenizer.from_pretrained("google/flan-ul2")
+
 
 # Uses StructLM
 # tokenizer = AutoTokenizer.from_pretrained("TIGER-Lab/StructLM-7B")
 # model = AutoModelForCausalLM.from_pretrained("TIGER-Lab/StructLM-7B")
 
+# Uses TableGPT2-7B
+# tokenizer = AutoTokenizer.from_pretrained("tablegpt/TableGPT2-7B")
+# model = AutoModelForCausalLM.from_pretrained("tablegpt/TableGPT2-7B", torch_dtype="auto", device_map="auto")
+
+# Uses DeepSeek-7b
+# tokenizer = AutoTokenizer.from_pretrained("tablegpt/TableGPT2-7B")
+# model = AutoModelForCausalLM.from_pretrained("tablegpt/TableGPT2-7B", torch_dtype="auto", device_map="auto")
+
+# For General Use:
+# tokenizer = AutoTokenizer.from_pretrained(model_name)
+# model = AutoModelForCausalLM.from_pretrained(model_name, 
+#                                              torch_dtype=torch.bfloat16, 
+#                                              device_map="auto", 
+#                                              offload_folder=offload_folder
+#                                              )
+
+# model.generation_config = GenerationConfig.from_pretrained(model_name)
+# model.generation_config.pad_token_id = model.generation_config.eos_token_id
+
+
 # second try this makes use of https://huggingface.co/JOSHMT0744/TableLlama-Q4_K_M-GGUF
 def call_gguf_model(prompts):
-    results = []
-    i = 0
-    for p in prompts:
-        # print("prompt is.... \n", p)
-        # if i < 75:
-        #     continue
-        # i = i +1
-        escaped = p.replace('"', '\\"') 
-        # truncated_prompt = escaped[:350]
-        cmd = f'llama-cli --hf-repo "JOSHMT0744/TableLlama-Q4_K_M-GGUF" --hf-file tablellama-q4_k_m.gguf -p "{escaped}" -c 1024 -n 128'
-        # cmd = f'llama-cli --hf-repo "TheBloke/stable-code-3b-GGUF" --hf-file stable-code-3b.Q4_K_M.gguf -p "{escaped}" -c 1024 -n 128'
-        # cmd = f'llama-cli -m ./models/stable-code-3b.Q4_K_M.gguf -p "{escaped}" -c 1024 -n 128'
-        args = shlex.split(cmd)
-        try:
-            result = subprocess.run(args, capture_output=True, text=True, check=True)
-            results.append(result.stdout)
-            # response = model(truncated_prompt, max_tokens=128, temperature=0.7)  # Adjust parameters as needed
-            # results.append(response["choices"][0]["text"])
-            # print("result is ================ \n", result)
-        except Exception as e:
-            print("ERROR ================ \n", e.stderr)
-            results.append(f"__CODE_GEN_ERROR__: {e.stderr}")
+    inputs = tokenizer(prompts, return_tensors="pt", padding=True, truncation=True) #.input_ids.to(model.device)
+    # inputs = tokenizer(prompts, return_tensors="pt") #.input_ids.to("cpu")
+    results = model.generate(**inputs.to(model.device), max_new_tokens=100) # ,max_length=700
+
+    # For TableGPT2-7B
+    # messages = [
+    #     {"role": "system", "content": "You are a helpful assistant."},
+    #     {"role": "user", "content": prompts},
+    # ]
+    # text = tokenizer.apply_chat_template(
+    #     messages, tokenize=False, add_generation_prompt=True
+    # )
+    # print(text)
+    # inputs = tokenizer([messages], return_tensors="pt").to(model.device)
+
+    # results = model.generate(**inputs, max_new_tokens=512)
+    # results = [
+    #     output_ids[len(input_ids) :]
+    #     for input_ids, output_ids in zip(inputs.input_ids, results)
+    # ]
+
+
+    # results = []
+    # i = 0
+    # for p in prompts:
+    #     # print("prompt is.... \n", p)
+    #     # if i < 75:
+    #     #     continue
+    #     # i = i +1
+    #     escaped = p.replace('"', '\\"') 
+    #     # truncated_prompt = escaped[:350]
+    #     cmd = f'llama-cli --hf-repo "JOSHMT0744/TableLlama-Q4_K_M-GGUF" --hf-file tablellama-q4_k_m.gguf -p "{escaped}" -c 1024 -n 128'
+    #     # cmd = f'llama-cli --hf-repo "TheBloke/stable-code-3b-GGUF" --hf-file stable-code-3b.Q4_K_M.gguf -p "{escaped}" -c 1024 -n 128'
+    #     # cmd = f'llama-cli -m ./models/stable-code-3b.Q4_K_M.gguf -p "{escaped}" -c 1024 -n 128'
+    #     args = shlex.split(cmd)
+    #     try:
+    #         result = subprocess.run(args, capture_output=True, text=True, check=True)
+    #         results.append(result.stdout)
+    #         # response = model(truncated_prompt, max_tokens=128, temperature=0.7)  # Adjust parameters as needed
+    #         # results.append(response["choices"][0]["text"])
+    #         # print("result is ================ \n", result)
+    #     except Exception as e:
+    #         print("ERROR ================ \n", e.stderr)
+    #         results.append(f"__CODE_GEN_ERROR__: {e.stderr}")
 
     return results
 
@@ -102,48 +160,117 @@ def example_generator(row: dict) -> str:
     # df.to_csv(index=False)
     # return f"""Answer the following quesion: {question} data: {df}"""
     # ----------- for Tablellama -------------
-    df_formatted = format_dataframe(df)
-    return f"""Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+    # df_formatted = format_dataframe(df)
+    # prompts = f"""Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+    # ### Instruction: 
+    # This is a hierachical table question answering task. The goal for this task is to answer the given qeustion based on the given table. The table might be hierachical.
+    
+    # ### Input:
+    # {df}
+
+    # ### Question:
+    # {question}
+
+    # ### Response:"""
+    # ----------- for original model used -------------
+    # prompts = f"""
+    # # TODO: complete the following function in one line. It should give the answer to: How many rows are there in this dataframe? 
+    # def example(df: pd.DataFrame) -> int:
+    #     df.columns=["A"]
+    #     return df.shape[0]
+
+    # # TODO: complete the following function in one line. It should give the answer to: {question}
+    # def answer(df: pd.DataFrame) -> {row["type"]}:
+    #     df.columns = {list(df.columns)}
+    #     return"""
+    # ----------- for flan_UL2 -------------
+    # df_formatted = format_dataframe(df)
+    prompts = f"""Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request. The response must strictly adhere to the output format, if specified.
     ### Instruction: 
     This is a hierachical table question answering task. The goal for this task is to answer the given qeustion based on the given table. The table might be hierachical.
     
     ### Input:
-    {df_formatted}
+    {df}
 
     ### Question:
     {question}
 
-    ### Response:"""
-    # ----------- for original model used -------------
-#     return f"""
-# # TODO: complete the following function in one line. It should give the answer to: How many rows are there in this dataframe? 
-# def example(df: pd.DataFrame) -> int:
-#     df.columns=["A"]
-#     return df.shape[0]
+    ### Output format:
+    {row["type"]}
 
-# # TODO: complete the following function in one line. It should give the answer to: {question}
-# def answer(df: pd.DataFrame) -> {row["type"]}:
-#     df.columns = {list(df.columns)}
-#     return"""
+    ### Response:
+     """
 
+    # ----------- for StructLM -------------
+    # df_formatted = format_dataframe(df)
+    # return f"""[INST] <<SYS>>
+    # You are an AI assistant that specializes in analyzing and reasoning over structured information. You will be given a task, optionally with some structured knowledge input. Your answer must strictly adhere to the output format, if specified.
+    # <</SYS>>
+
+    # Use the information in the following table to solve the problem, choose between the choices if they are provided. table:
+
+    # {df}
+
+
+    # question:
+
+    # {question} [/INST]
+    # """
+
+ # ----------- for TableGPT2-7B -------------
+    # df = df.map(lambda x: str(x) if isinstance(x, list) else x)
+    # df_info = df.head(5).to_string(index=False)
+
+    # prompts = f"""Given access to several pandas dataframes, write the Python code to answer the user's question.
+
+    # /*
+    # "df.head(5).to_string(index=False)" as follows:
+    # {df_info}
+    # */
+
+    # Question: {question}
+    # """
+
+    # if isinstance(prompts, list):
+    #     prompts = " ".join(prompts)
+
+    # ----------- for DeepSeek-7b -------------
+    # prompts = f"""Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+    # ### Instruction: 
+    # This is a hierachical table question answering task. The goal for this task is to answer the given qeustion based on the given table. The table might be hierachical.
+
+    # ### Input:
+    # {df}
+
+    # ### Question:
+    # {question}
+
+    # ### Response:"""
+
+    return prompts
 
 def example_postprocess(response: str, dataset: str, loader):
     try:
         df = loader(dataset)
-        lead = """
-def answer(df):
-    return """
-        exec(
-            "global ans\n"
-            + lead
-            + response.split("return")[2]
-            .split("\n")[0]
-            .strip()
-            .replace("[end of text]", "")
-            + f"\nans = answer(df)"
-        )
-        # no true result is > 1 line atm, needs 1 line for txt format
-        return ans.split("\n")[0] if "\n" in str(ans) else ans
+        response = tokenizer.decode(response[0])
+        # response = tokenizer.batch_decode(response, skip_special_tokens=True)[0]
+        # print("response: ", response)
+#         lead = """
+# def answer(df):
+#     return """
+#         exec(
+#             "global ans\n"
+#             + lead
+#             + response.split("return")[2]
+#             .split("\n")[0]
+#             .strip()
+#             .replace("[end of text]", "")
+#             + f"\nans = answer(df)"
+#         )
+#         # no true result is > 1 line atm, needs 1 line for txt format
+#         return ans.split("\n")[0] if "\n" in str(ans) else ans
+        # print(response.split(">")[1].split("<")[0].strip())
+        return response.split(">")[1].split("<")[0].strip()
     except Exception as e:
         return f"__CODE_ERROR__: {e}"
 
@@ -154,15 +281,15 @@ def evaluate():
     qa = utils.load_qa(name="semeval", split="dev")
     evaluator = Evaluator(qa=qa)
 
-    runner = Runner(
-        model_call=call_gguf_model,
-        prompt_generator=example_generator,
-        postprocess=lambda response, dataset: example_postprocess(
-            response, dataset, utils.load_table
-        ),
-        qa=qa,
-        batch_size=10,
-    )
+    # runner = Runner(
+    #     model_call=call_gguf_model,
+    #     prompt_generator=example_generator,
+    #     postprocess=lambda response, dataset: example_postprocess(
+    #         response, dataset, utils.load_table
+    #     ),
+    #     qa=qa,
+    #     batch_size=10,
+    # )
 
     runner_lite = Runner(
         model_call=call_gguf_model,
@@ -190,10 +317,10 @@ def evaluate():
     print("Created Archive.zip containing predictions.txt and predictions_lite.txt")
 
 def sampling():
-    tableID = "051_Pokemon"
-    question = "How many unique Pokémon types are there in the 'type1' column?"  
-    answerType = "number"
-    sampleAnswer = "20"
+    tableID = "060_Bakery"
+    question = "List the top 3 items most frequently bought in the morning."  
+    answerType = "list[category]"
+    sampleAnswer = "['Coffee', 'Bread', 'Pastry']"
 
     input = {
         "dataset": tableID,
@@ -207,10 +334,10 @@ def sampling():
     print("Generated Prompt:\n", generated_prompt)
 
     # Step 2: Call the model
-    responses = call_gguf_model([generated_prompt]) 
+    responses = call_gguf_model(generated_prompt) 
 
     # Flan-UL2
-    # inputs = tokenizer(input_string, return_tensors="pt").input_ids.to("cuda")
+    # inputs = tokenizer(generated_prompt, return_tensors="pt").input_ids.to("cuda")
     # responses = model.generate(inputs, max_length=200)
 
     # StructLM
@@ -230,11 +357,13 @@ def sampling():
     # inputs = tokenizer(input_string, return_tensors="pt").input_ids.to("cuda")
     # responses = model.generate(inputs, max_length=200)
 
-    print("Model Response:\n", responses[0])
-    # print("Model Response:\n", tokenizer.decode(outputs[0]))
+    # print("Model Response:\n", responses[0])
+    # response = tokenizer.decode(responses[0])
+    response = tokenizer.decode(responses[0], skip_special_tokens=True) # tokenizer.batch_decode(responses, skip_special_tokens=True)[0]
+    print("Model Response:\n", response)
 
     # Step 3: Post-process the response
-    processed_response = example_postprocess(responses[0], tableID, utils.load_table)
+    processed_response = example_postprocess(responses, tableID, utils.load_table)
     print("Processed Answer:\n", processed_response)
 
 
